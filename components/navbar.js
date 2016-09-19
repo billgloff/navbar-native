@@ -331,8 +331,8 @@ export default class Navbar extends Component {
         style: PropTypes.object
     };
 
-    static buttonShape = PropTypes.shape(Navbar.buttonPropTypes);
-    static arrayOfButtons = PropTypes.arrayOf(Navbar.buttonShape);
+    static buttonShape = PropTypes.shape(this.constructor.buttonPropTypes);
+    static arrayOfButtons = PropTypes.arrayOf(this.constructor.buttonShape);
 
     static defaultProps = {
         statusBar: {
